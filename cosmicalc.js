@@ -27,7 +27,7 @@
 var VERSION = "3.4.3",
 	LAST_MODIFIED = "2020.05.16",
 
-	CODEW_URL = "https://blead.github.io/oldcosmiccalc/cosmiccalc/",
+	CODEW_URL = "https://blead.github.io/oldcosmiccalc/",
 	
 	MAXLEVEL_DEF = 10;
 	ADDLEVEL_DEF = 0;
@@ -119,7 +119,7 @@ var VERSION = "3.4.3",
 		webAccess:0,
 		accessData:[],
 		timeout:15000,
-		dataFolder:"data/",
+		dataFolder:"cosmiccalc/data/",
 		henkan:false,
 		mapInitMax:60,
 		//maxDataSize:200000,
@@ -1824,7 +1824,7 @@ var ajaxManager = new function(){
 			};
 			$.ajax({
 				//here CODEW_URL+fname, +".json" was added to make it work with files instead of php script
-				url: (INI.webAccess && INI.accessData[fname] ? CODEW_URL+"data/"+fname+".json" : INI.dataFolder+fname+".json"),
+				url: (INI.webAccess && INI.accessData[fname] ? CODEW_URL+"cosmicalc/data/"+fname+".json" : INI.dataFolder+fname+".json"),
 				timeout: INI.timeout,
 				dataType: "text",
 				success: expandData,
