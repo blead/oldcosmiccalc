@@ -1,0 +1,3 @@
+[submodule "cosmiccalc"]
+	path = cosmiccalc
+	url = git@github.com:blead/cosmiccalc.git
